@@ -4,7 +4,8 @@ module BaseCrm
     include BaseCrm::Resource
     include BaseCrm::Noteable
     include BaseCrm::Taskable
-
+    include BaseCrm::CustomFieldable('custom_fields')
+    
     namespace false
 
     prefix "api/v1"
